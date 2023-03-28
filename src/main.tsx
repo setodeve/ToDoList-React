@@ -2,10 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -13,11 +10,11 @@ const router = createBrowserRouter([
     element:  <h1>Hello</h1>
   },
   {
-    path: "todos/:todoID",
+    path: "todos",
     element: <h1>Hello</h1>
   },
   {
-    path: "todos",
+    path: "todos/:todoID",
     element: <h1>Hello</h1>
   },
   {
@@ -25,6 +22,7 @@ const router = createBrowserRouter([
     element: <h1>Hello</h1>
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <App />
