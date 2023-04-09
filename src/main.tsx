@@ -5,6 +5,7 @@ import {
   createBrowserRouter,
   RouterProvider 
 } from "react-router-dom";
+import { TodoInfoProvider } from './data/data'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+    <TodoInfoProvider>
+      <RouterProvider router={router} />
+    </TodoInfoProvider>
+  </React.StrictMode>
 )
