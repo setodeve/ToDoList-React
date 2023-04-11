@@ -16,6 +16,7 @@ interface TodoList{
 }
 
 export const Top : React.FC<TodoList> = (props) => {
+  const {todoInfo,setTodoInfo} = useContext(TodoInfoContext)
   return (
     <div>
 
