@@ -6,11 +6,12 @@ import {
   RouterProvider 
 } from "react-router-dom";
 import { TodoInfoProvider } from './data/data'
+import {Top} from "./pages/top"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:  <h1>Hello</h1>
+    element:  <Top/>
   },
   {
     path: "todos",

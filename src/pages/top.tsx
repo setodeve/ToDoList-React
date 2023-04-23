@@ -11,15 +11,20 @@ interface Todo{
   status:string
 }
 
-interface TodoList{
-  todos: Array<Todo>
-}
-
-export const Top : React.FC<TodoList> = (props) => {
+export const Top = () => {
   const {todoInfo,setTodoInfo} = useContext(TodoInfoContext)
+  const todos = todoInfo
   return (
     <div>
-
+      {
+        todos.map((todo:Todo)=>(
+          <div className="Todo" key={todo.id}>
+            <h3>{todo.title}</h3>
+          </div>
+        ))
+      }
     </div>
   )
 }
+
+export default Top
