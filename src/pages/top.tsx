@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { TodoInfoContext } from '../data/data'
+import { Todos } from '../components/Todos'
 
 interface Todo{
   id:number,
@@ -12,17 +13,10 @@ interface Todo{
 }
 
 export const Top = () => {
-  const {todoInfo,setTodoInfo} = useContext(TodoInfoContext)
-  const todos = todoInfo
+
   return (
     <div>
-      {
-        todos.map((todo:Todo)=>(
-          <div className="Todo" key={todo.id}>
-            <h3>{todo.title}</h3>
-          </div>
-        ))
-      }
+      <Todos/>
     </div>
   )
 }
