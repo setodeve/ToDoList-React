@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { TodoInfoContext } from '../data/data'
+import { Todo } from './Todo'
 
 interface Todo{
   id:number,
@@ -18,9 +19,7 @@ export const Todos = () => {
     <div>
       {
         todos.map((todo:Todo)=>(
-          <div className="Todo" key={todo.id}>
-            <h3>{todo.title}</h3>
-          </div>
+          <Todo data={todo}/>
         ))
       }
     </div>

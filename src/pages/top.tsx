@@ -15,9 +15,7 @@ interface Todo{
 export const Top = () => {
 
   return (
-    <div>
-      <Todos/>
-    </div>
+    <Todos/>
   )
 }
 
