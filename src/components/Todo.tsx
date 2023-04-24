@@ -11,7 +11,7 @@ interface Todo{
 export const Todo = (data:Todo) => {
   const todo = data.data
   return (
-    <div className="Todo" key={todo.id}>
+    <div>
       <h3>{todo.title}</h3>
     </div>
   )

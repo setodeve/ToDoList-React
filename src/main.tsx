@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { TodoInfoProvider } from './data/data'
 import {Top} from "./pages/top"
+import {Detail} from "./pages/detail"
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "todos/:todoID",
-    element: <h1>Hello</h1>
+    element: <Detail/>
   },
   {
     path: "todos/:todoID/edit",

@@ -5,5 +5,5 @@
 
 ## Page
   * Top
-  * Todo
+  * detail
   * Edit

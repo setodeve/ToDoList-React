@@ -19,7 +19,7 @@ export const Todos = () => {
     <div>
       {
         todos.map((todo:Todo)=>(
-          <Todo data={todo}/>
+          <Todo data={todo} key={todo.id}/>
         ))
       }
     </div>
