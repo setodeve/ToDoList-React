@@ -5,6 +5,5 @@
 
 ## Page
   * Top
-  * Todos
   * Todo
   * Edit
