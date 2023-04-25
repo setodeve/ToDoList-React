@@ -8,6 +8,7 @@ import {
 import { TodoInfoProvider } from './data/data'
 import {Top} from "./pages/top"
 import {Detail} from "./pages/detail"
+import {Edit} from "./pages/edit"
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "todos/:todoID/edit",
-    element: <h1>Hello</h1>
+    element: <Edit/>
   },
 ]);
 
