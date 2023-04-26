@@ -16,7 +16,6 @@ interface Todo{
 const findTodo = () => {
   const paramsData  = useParams();
   const {todoInfo,setTodoInfo} = useContext(TodoInfoContext)
-  console.log(todoInfo.filter((todo:Todo)=>todo.id==Number(paramsData.todoID)))
   return todoInfo.filter((todo:Todo)=>todo.id==Number(paramsData.todoID))
 }
 

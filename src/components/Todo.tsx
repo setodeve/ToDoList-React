@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Todo{
   id:number,
   title:string,
@@ -12,7 +14,9 @@ export const Todo = (data:Todo) => {
   const todo = data.data
   return (
     <div>
-      <h3>{todo.title}</h3>
+      <Link to={`/todos/${todo.id}/`}>
+        <h3>{todo.title}</h3>
+      </Link>
     </div>
   )
 }
