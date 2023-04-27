@@ -6,9 +6,9 @@ import {
   RouterProvider 
 } from "react-router-dom";
 import { TodoInfoProvider } from './data/data'
-import {Top} from "./pages/top"
-import {Detail} from "./pages/detail"
-import {Edit} from "./pages/edit"
+import { Top } from "./pages/top"
+import { Detail } from "./pages/detail"
+import { Edit } from "./pages/edit"
 
 const router = createBrowserRouter([
   {

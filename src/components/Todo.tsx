@@ -17,6 +17,9 @@ export const Todo = (data:Todo) => {
       <Link to={`/todos/${todo.id}/`}>
         <h3>{todo.title}</h3>
       </Link>
+      <Link to={`/todos/${todo.id}/edit`}>
+        <h3>edit</h3>
+      </Link>
     </div>
   )
 }
